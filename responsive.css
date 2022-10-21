@@ -1,0 +1,57 @@
+#container{
+    margin: 0 auto;
+}
+
+#main{
+    margin-top: 5px;
+    display: flex;
+}
+
+#contain{
+    width: 70%;
+}
+
+#sidebar{
+    width: 30%;
+}
+
+.sidebar-block{
+    height: 100px;
+    border: 2px solid crimson;
+    margin-bottom: 5px;
+    display: none;
+}
+
+#header, #footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    .sidebar-block{
+        display: block;
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #main{
+        margin-top: 5px;
+        display: flex;
+    }
+
+    #contain{
+        width: 70%;
+    }
+
+    #sidebar{
+        width: 30%;
+    }
+
+    .sidebar-block{
+        background-color: yellow;
+    }
+}

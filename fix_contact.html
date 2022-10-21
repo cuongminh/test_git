@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <style>
+        #container{
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        h1, button{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        h1{
+            margin: 5px 0;
+        }
+
+        button{
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        button:hover{
+            cursor: pointer;
+            color: cornsilk;
+        }
+
+        #footer{
+            text-align: center;
+        }
+
+        #header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header ul{
+            align-items: center;
+        }
+
+        #header li{
+            display: inline-block;
+            font-weight: bold;
+            min-width: 90px;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #header img{
+            width: 100px;
+            height: 70px;
+        }
+
+        #header li:hover{
+            color: orange;
+            border-bottom: 2px solid orange;
+        }
+
+        .fg {
+            margin-bottom: 5px;
+        }
+
+        .fg>div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fg>input, select, textarea{
+            width: 99%;
+        }
+
+        .fg .err{
+            font-weight: bold;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="./logo.jpg" alt="ERROR">
+        <ul>
+            <li>HOME</li>
+            <li>JOBS</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+      <h1>GENERAL INQUIRIES</h1>
+      <form action="">
+        <div class="fg">
+            <div>
+                <span>NAME</span>
+                <span class="err">Required</span>
+            </div>
+            <input type="text">
+        </div>
+
+
+          <div class="fg">
+              <div>
+                  <span>EMAIL</span>
+                  <span class="err">Required</span>
+              </div>
+              <input type="email">
+          </div>
+
+          <div class="fg">
+              <div>
+                  <span>NATURE OF EQUITY</span>
+              </div>
+              <select name="" id="">
+                  <option value="general">general</option>
+              </select>
+          </div>
+
+          <div class="fg">
+              <div>
+                  <span>MESSAGE</span>
+              </div>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="fg">
+              <div>
+                  <span>3 + 4 = ?</span>
+                  <span class="err">Required</span>
+              </div>
+              <input type="text">
+          </div>
+
+          <div>
+              <button type="submit">SUBMIT</button>
+          </div>
+      </form>
+      <div id="footer">
+          200 Online Users - 24 Visited Users
+      </div>
+  </div>
+</body>
+</html>
